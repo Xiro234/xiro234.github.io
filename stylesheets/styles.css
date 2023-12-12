@@ -1,3 +1,17 @@
+* { margin: 0; padding: 0;}
+body, html { height:100%; }
+
+
+canvas {
+    position: absolute;
+    display: block;
+}
+
+.background {
+    width:100vw;
+    height:100vh;
+}
+
 * {
     color: #f9f9fa;
 }
@@ -7,6 +21,11 @@
     font-size: 35pt;
     font-weight: 550;
     font-style: italic;
+}
+
+#overlay {
+    position: absolute;
+    width: 100%;
 }
 
 .title {
@@ -60,10 +79,9 @@ a:hover {
     justify-content: center;
     width: 600px;
     padding: 10px 10px 10px 10px;
-    border-radius: 10px;
-    background-color: #706882;
+    background: rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(10px);
     overflow-wrap: break-word;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
   
 button {
@@ -79,7 +97,6 @@ button {
     border-radius: 5px;
     border-width: 1px;
     transition-duration: 0.4s;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
   
 button:hover { 
@@ -87,11 +104,6 @@ button:hover {
     cursor: pointer;
     border-color: #3A305C;
     color: #3A305C;
-}
-  
-body {
-    background-color: #423d4e;
-    
 }
   
 p {

@@ -11,44 +11,49 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="stylesheets/styles.css">
+        <script src="https://unpkg.com/thpace"></script>
     </head>
     <body>
-        <div class="row">
-            <img src="evan.jpg" alt="A picture of Evan Scarborough">
-        </div>
-        <div class="row">
-            <p class="name">
-                Evan Scarborough
-            </p>
-        </div>
-        <div class ="links">
-            <a href="evan.m.scarborough@gmail.com">Email</a> • <a href="https://www.linkedin.com/in/evan-m-scarborough/">LinkedIn</a> • <a href="https://github.com/Xiro234">GitHub</a>
-        </div>
-        <div class="row">
-            <div class="project_box">
-              <p class="title">Terraria Moba</p>
-              <p class="description">A proof-of-concept Terraria mod using the TModLoader API that emulates the gameplay loop of a modern MOBA. Multiple characters implemented that have a slew of abilities and unique gameplay.</p>
-              <button>View on Github</button>
+        <canvas id="background"></canvas>
+        <div id="overlay">
+            <div class="row">
+                <img src="evan.jpg" alt="A picture of Evan Scarborough">
             </div>
-            
-            <div class="project_box">
-              <p class="title">Riichi Mahjong Calculator</p>
-              <p class="description">Android 5.0 and above application for calculating Riichi Mahjong scores. By putting in a 13 tile hand, it outputs the Han and Fu values for that hand. Made using Kotlin as a final project for my GUI programming class in university.</p>
-              <button>View on Github</button>
+            <div class="row">
+                <p class="name">
+                    Evan Scarborough
+                </p>
+            </div>
+            <div class ="links">
+                <a href="evan.m.scarborough@gmail.com">Email</a> • <a href="https://www.linkedin.com/in/evan-m-scarborough/">LinkedIn</a> • <a href="https://github.com/Xiro234">GitHub</a>
+            </div>
+            <div class="row">
+                <div class="project_box">
+                <p class="title">Terraria Moba</p>
+                <p class="description">A proof-of-concept Terraria mod using the TModLoader API that emulates the gameplay loop of a modern MOBA. Multiple characters implemented that have a slew of abilities and unique gameplay.</p>
+                <button>View on Github</button>
+                </div>
+                
+                <div class="project_box">
+                <p class="title">Riichi Mahjong Calculator</p>
+                <p class="description">Android 5.0 and above application for calculating Riichi Mahjong scores. By putting in a 13 tile hand, it outputs the Han and Fu values for that hand. Made using Kotlin as a final project for my GUI programming class in university.</p>
+                <button>View on Github</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="project_box">
+                <p class="title">This Website!</p>
+                <p class="description">Written with pure HTML and CSS, this website was made to show off my portfolio and as a piece itself! Hope you enjoy it!</p>
+                <button>View on Github</button>
+                </div>
+                
+                <div class="project_box">
+                <p class="title">Pong Clone</p>
+                <p class="description">As an introduction into making games with Godot, I made a clone of pong. Two player, tennis-like game where you paddle a ball back and forth trying to hit the ball into the opponent's side.</p>
+                <button>View on Github</button>
+                </div>
             </div>
         </div>
-        <div class="row">
-            <div class="project_box">
-              <p class="title">This Website!</p>
-              <p class="description">Written with pure HTML and CSS, this website was made to show off my portfolio and as a piece itself! Hope you enjoy it!</p>
-              <button>View on Github</button>
-            </div>
-            
-            <div class="project_box">
-              <p class="title">Pong Clone</p>
-              <p class="description">As an introduction into making games with Godot, I made a clone of pong. Two player, tennis-like game where you paddle a ball back and forth trying to hit the ball into the opponent's side.</p>
-              <button>View on Github</button>
-            </div>
-        </div>
+        <script src="index.js"></script>
     </body>
 </html>
