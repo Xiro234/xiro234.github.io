@@ -1,0 +1,100 @@
+* {
+    color: #f9f9fa;
+}
+
+.name {
+    font-family: "Segoe UI", sans-serif;
+    font-size: 35pt;
+    font-weight: 550;
+    font-style: italic;
+}
+
+.title {
+    font-family: "Segoe UI", sans-serif;
+    font-size: 25pt;
+    font-weight: 550;
+    font-style: italic;
+}
+
+img {
+    border-radius: 100%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+a {
+    font-size: 12pt;
+    text-decoration: none;
+    transition-duration: 0.4s;
+}
+
+a:hover {
+    text-decoration: underline;
+    transform: scale(1.1);
+}
+  
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    gap: 10px;
+}
+  
+.description {
+    font-family: "Segoe UI", sans-serif;
+    text-align: center;
+}
+  
+.project_box {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 600px;
+    padding: 10px 10px 10px 10px;
+    border-radius: 10px;
+    background-color: #706882;
+    overflow-wrap: break-word;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+  
+button {
+    display: inline-flex;
+    align-self: flex-start;
+    justify-content: center;
+    flex-basis: 0;
+    font-family: "Segoe UI", sans-serif;
+    background-color: #8c869b;
+    padding: 10px 10px;
+    margin: 0 auto;
+    border: solid;
+    border-radius: 5px;
+    border-width: 1px;
+    transition-duration: 0.4s;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+  
+button:hover { 
+    background-color: #D2C5FC;
+    cursor: pointer;
+    border-color: #3A305C;
+    color: #3A305C;
+}
+  
+body {
+    background-color: #423d4e;
+    
+}
+  
+p {
+    line-height: 28px;
+    margin: 10px;
+}
