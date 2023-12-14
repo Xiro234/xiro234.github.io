@@ -11,10 +11,11 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="stylesheets/styles.css">
-        <script src="https://unpkg.com/thpace"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.waves.min.js"></script>
     </head>
     <body>
-        <canvas id="background"></canvas>
+        <div id="background"></div>
         <div id="overlay">
             <div class="row">
                 <img src="evan.jpg" alt="A picture of Evan Scarborough">
@@ -25,35 +26,50 @@
                 </p>
             </div>
             <div class ="links">
-                <a href="evan.m.scarborough@gmail.com">Email</a> • <a href="https://www.linkedin.com/in/evan-m-scarborough/">LinkedIn</a> • <a href="https://github.com/Xiro234">GitHub</a>
+                <a class="webLink" href="mailto:evan.m.scarborough@gmail.com">Email</a> • <a class="webLink" href="https://www.linkedin.com/in/evan-m-scarborough/">LinkedIn</a> • <a class="webLink" href="https://github.com/Xiro234">GitHub</a>
             </div>
-            <div class="row">
-                <div class="project_box">
-                <p class="title">Terraria Moba</p>
-                <p class="description">A proof-of-concept Terraria mod using the TModLoader API that emulates the gameplay loop of a modern MOBA. Multiple characters implemented that have a slew of abilities and unique gameplay.</p>
-                <button>View on Github</button>
+            <div class="projects">
+                <div class="row">
+                    <div class="box">
+                        <p class="title">Terraria Moba</p>
+                        <p class="description">A proof-of-concept Terraria mod using the TModLoader API that emulates the gameplay loop of a modern MOBA. Multiple characters implemented that have a slew of abilities and unique gameplay.</p>
+                        <a href="https://github.com/Xiro234/TerrariaMoba"><button>View on Github</button></a>
+                    </div>
+                        
+                    <div class="box">
+                        <p class="title">Riichi Mahjong Calculator</p>
+                        <p class="description">Android 5.0 and above application for calculating Riichi Mahjong scores. By putting in a 13 tile hand, it outputs the Han and Fu values for that hand. Made using Kotlin as a final project for my GUI programming class in university.</p>
+                        <a href="https://github.com/Xiro234/Riichi-Mahjong-Calculator"><button>View on Github</button></a>
+                    </div>
                 </div>
-                
-                <div class="project_box">
-                <p class="title">Riichi Mahjong Calculator</p>
-                <p class="description">Android 5.0 and above application for calculating Riichi Mahjong scores. By putting in a 13 tile hand, it outputs the Han and Fu values for that hand. Made using Kotlin as a final project for my GUI programming class in university.</p>
-                <button>View on Github</button>
-                </div>
-            </div>
-            <div class="row">
-                <div class="project_box">
-                <p class="title">This Website!</p>
-                <p class="description">Written with pure HTML and CSS, this website was made to show off my portfolio and as a piece itself! Hope you enjoy it!</p>
-                <button>View on Github</button>
-                </div>
-                
-                <div class="project_box">
-                <p class="title">Pong Clone</p>
-                <p class="description">As an introduction into making games with Godot, I made a clone of pong. Two player, tennis-like game where you paddle a ball back and forth trying to hit the ball into the opponent's side.</p>
-                <button>View on Github</button>
+                <div class="row">
+                    <div class="box">
+                        <p class="title">This Website!</p>
+                        <p class="description">Written as an exploration into frontend development, this website was made to show off my portfolio and as a piece itself! Hope you enjoy it!</p>
+                        <a href="https://github.com/Xiro234/xiro234.github.io"><button>View on Github</button></a>
+                    </div>
+                        
+                    <div class="box">
+                        <p class="title">Pong Clone</p>
+                        <p class="description">As an introduction into making games with Godot, I made a clone of pong. Two player, tennis-like game where you paddle a ball back and forth trying to hit the ball into the opponent's side.</p>
+                        <a href="https://github.com/Xiro234/Pong_Clone"><button>View on Github</button></a>
+                    </div>
                 </div>
             </div>
         </div>
-        <script src="index.js"></script>
+        <script>
+            VANTA.WAVES({
+                el: "#background",
+                mouseControls: false,
+                touchControls: false,
+                gyroControls: false,
+                minHeight: 200.00,
+                minWidth: 200.00,
+                scale: 1.00,
+                shininess: 0.05,
+                scaleMobile: 1.00,
+                color: 0x140A21
+                })
+            </script>
     </body>
 </html>
