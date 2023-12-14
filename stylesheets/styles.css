@@ -8,6 +8,7 @@ body, html { height:100%; }
 #background {
     position: fixed;
     width: 100vw;
+    min-height: -webkit-fill-available;
     height: 100vh;
 }
 
