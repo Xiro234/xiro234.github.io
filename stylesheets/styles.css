@@ -87,8 +87,7 @@ img {
     overflow-wrap: break-word;
     border-radius: 5px;
     background-color: rgba(0, 0, 0, 0.13);
-    backdrop-filter: blur(10px);
-    margin-bottom: 20px
+    margin-bottom: 20px;
 }
   
 button {
@@ -99,7 +98,7 @@ button {
     font-family: "Segoe UI", sans-serif;
     background-color: rgba(0, 0, 0, 0);
     padding: 10px 10px;
-    margin: 0 auto;
+    margin-bottom: 10px;
     border: solid;
     border-radius: 5px;
     border-width: 1px;
