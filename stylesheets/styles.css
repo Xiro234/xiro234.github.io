@@ -39,6 +39,7 @@ body, html { height:100%; }
     font-size: 25pt;
     font-weight: 550;
     font-style: italic;
+    text-align: center;
 }
 
 img {
